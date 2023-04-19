@@ -65,13 +65,11 @@ button {
   width: 500px;
   margin: 65px auto;
   display: -webkit-box;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   flex-direction: column;
   border-radius: 4px;
   box-shadow: 0 2px 25px rgba(0, 0, 0, 0.2);
-  opacity: 0;
 }
 .login-form h1 {
   padding: 35px 35px 0 35px;
@@ -149,11 +147,11 @@ button {
   background: #d8d8d8;
 }
 .login-form .action button:nth-child(2) {
-  background: #2d3b55;
+  background: #482ff7;
   color: #fff;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 4px;
 }
 .login-form .action button:nth-child(2):hover {
-  background: #3c4d6d;
+  background: #5d45fb;
 }
