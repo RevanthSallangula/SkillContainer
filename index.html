@@ -42,7 +42,9 @@
           </li>
           <li class="nav-item">
             <button class="contact-btn">
-              <a href="#" class="nav-link">Contact Us</a>
+              <a href="#" class="nav-link" onclick="toggleShowContact()"
+                >Contact Us</a
+              >
             </button>
           </li>
         </ul>
@@ -52,7 +54,7 @@
     <div class="detail-forms">
       <!-- LOGIN -->
       <div class="login-form">
-        <form>
+        <form class="login-form-class">
           <div>
             <button class="btn-close" onclick="closeAll()">X</button>
             <h1 style="text-align: center">Login</h1>
@@ -83,7 +85,7 @@
       </div>
       <!-- REGISTRATION -->
       <div class="registration-form">
-        <form>
+        <form class="login-form-class">
           <div>
             <button class="btn-close" onclick="closeAll()">X</button>
             <h1 style="text-align: center">Registration</h1>
@@ -120,6 +122,35 @@
           </div>
           <div class="action">
             <button class="registration-sign-up-btn">SIGN UP</button>
+          </div>
+        </form>
+      </div>
+      <!-- CONTACT -->
+      <div class="contact-form" style="display: flex">
+        <form>
+          <div>
+            <button class="btn-close" onclick="closeAll()">X</button>
+            <h1 style="text-align: center">Contact Us</h1>
+          </div>
+          <input
+            name="name"
+            type="text"
+            class="feedback-input"
+            placeholder="Name"
+          />
+          <input
+            name="email"
+            type="text"
+            class="feedback-input"
+            placeholder="Email"
+          />
+          <textarea
+            name="text"
+            class="feedback-input"
+            placeholder="Comment"
+          ></textarea>
+          <div class="action">
+            <button class="contact-submission-btn">SUBMIT</button>
           </div>
         </form>
       </div>

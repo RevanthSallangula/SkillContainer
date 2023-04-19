@@ -6,20 +6,24 @@ const btnLoginRegiter = document.querySelector(".login-registration-btn");
 const btnLoginSignIn = document.querySelector(".login-sign-in-btn");
 const loginForm = document.querySelector(".login-form");
 const registrationForm = document.querySelector(".registration-form");
+const contactForm = document.querySelector(".contact-form");
 const btnRegistrationSignUp = document.querySelector(
   ".registration-sign-up-btn"
 );
+
 const loggedIn = false;
 
 function closeAll() {
   loginForm.style.display = "none";
   registrationForm.style.display = "none";
+  contactForm.style.display = "none";
 }
 
 closeAll();
 
+// contactForm.style.display = "flex";
+
 function toggleShowLogin() {
-  closeAll();
   if (loginForm.style.display === "none" && loggedIn === false) {
     loginForm.style.display = "flex";
   }
@@ -29,6 +33,14 @@ function toggleShowRegistration() {
   closeAll();
   if (registrationForm.style.display === "none") {
     registrationForm.style.display = "flex";
+  }
+}
+
+function toggleShowContact() {
+  closeAll();
+  if (contactForm.style.display === "none") {
+    contactForm.style.display = "flex";
+    console.log("cF display:none");
   }
 }
 btnDashboard.addEventListener("click", function () {
