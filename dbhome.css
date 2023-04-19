@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+.header {
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+.nav-title {
+  font-size: 2.1rem;
+  font-weight: 500;
+  color: #482ff7;
+}
+
+#profile-icon {
+  max-width: 3.1rem;
+  max-height: 3.1rem;
+}
+
+#profile-icon:hover {
+  opacity: 0.6;
+}
