@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <title>Dashboard</title>
   </head>
   <body>
@@ -11,11 +15,73 @@
     <script defer src="dbhome.js"></script>
     <header class="header">
       <nav class="navbar">
-        <a href="#" class="nav-title">Dashboard</a>
+        <a href="#" class="nav-title" style="padding-left: 80px">Dashboard</a>
         <button>
           <img id="profile-icon" src="images/profile_icon.png" alt="" />
         </button>
       </nav>
     </header>
+    <div class="sidebar">
+      <div class="logo-details">
+        <div class="logo_name">SkillContainer</div>
+        <i class="bx bx-menu" id="btn"></i>
+      </div>
+      <ul class="nav-list">
+        <li>
+          <i class="bx bx-search"></i>
+          <input type="text" placeholder="Search..." />
+          <span class="tooltip">Search</span>
+        </li>
+        <li>
+          <a href="dashboard.html">
+            <i class="bx bx-grid-alt"></i>
+            <button class="links_name">Dashboard</button>
+          </a>
+          <span class="tooltip">Dashboard</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-user"></i>
+            <span class="links_name">User</span>
+          </a>
+          <span class="tooltip">User</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-file"></i>
+            <span class="links_name">Certificates</span>
+          </a>
+          <span class="tooltip">Certificates</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-folder"></i>
+            <span class="links_name">Container</span>
+          </a>
+          <span class="tooltip">Containers</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-cog"></i>
+            <span class="links_name">Setting</span>
+          </a>
+          <span class="tooltip">Setting</span>
+        </li>
+        <li class="profile">
+          <div class="profile-details">
+            <!--<img src="profile.jpg" alt="profileImg">-->
+            <div class="name_job">
+              <div class="name">Username</div>
+              <div class="job">Occuption</div>
+            </div>
+          </div>
+          <i class="bx bx-log-out" id="log_out"></i>
+        </li>
+      </ul>
+    </div>
+    <section class="home-section">
+      <div class="text">Dashboard</div>
+    </section>
+    <script></script>
   </body>
 </html>
