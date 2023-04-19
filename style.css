@@ -168,6 +168,12 @@ button {
   background: #5d45fb;
 }
 
+.btn-close {
+  font-size: 22px;
+  float: right;
+  padding-right: 22px;
+  padding-top: 15px;
+}
 /* FIX THIS!!!! */
 /* input[type="date"] {
   background-color: #5d45fb;
