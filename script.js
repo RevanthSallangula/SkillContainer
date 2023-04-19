@@ -21,7 +21,7 @@ function closeAll() {
 
 closeAll();
 
-// contactForm.style.display = "flex";
+contactForm.style.display = "flex";
 
 function toggleShowLogin() {
   if (loginForm.style.display === "none" && loggedIn === false) {
