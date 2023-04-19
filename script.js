@@ -6,6 +6,9 @@ const btnLoginRegiter = document.querySelector(".login-registration-btn");
 const btnLoginSignIn = document.querySelector(".login-sign-in-btn");
 const loginForm = document.querySelector(".login-form");
 const registrationForm = document.querySelector(".registration-form");
+const btnRegistrationSignUp = document.querySelector(
+  ".registration-sign-up-btn"
+);
 const loggedIn = false;
 
 function closeAll() {
