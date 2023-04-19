@@ -8,6 +8,11 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Rubik:400,700"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
@@ -19,7 +24,9 @@
         <ul class="nav-menu">
           <li class="nav-item">
             <button class="dashboard-btn">
-              <a href="#" class="nav-link" onclick="toggleShow()">Dashboard</a>
+              <a href="#" class="nav-link" onclick="toggleShowLogin()"
+                >Dashboard</a
+              >
             </button>
           </li>
           <li class="nav-item">
@@ -40,27 +47,74 @@
         </ul>
       </nav>
     </header>
-    <div class="login-form">
-      <form>
-        <h1>Login</h1>
-        <div class="content">
-          <div class="input-field">
-            <input type="email" placeholder="Email" autocomplete="nope" />
+    <div class="detail-forms">
+      <div class="login-form">
+        <form>
+          <h1>Login</h1>
+          <button type="button" class="btn-close" aria-label="Close"></button>
+          <div class="content">
+            <div class="input-field">
+              <input type="email" placeholder="Email" autocomplete="nope" />
+            </div>
+            <div class="input-field">
+              <input
+                type="password"
+                placeholder="Password"
+                autocomplete="new-password"
+              />
+            </div>
+            <a href="#" class="link">Forgot Your Password?</a>
           </div>
-          <div class="input-field">
-            <input
-              type="password"
-              placeholder="Password"
-              autocomplete="new-password"
-            />
+          <div class="action">
+            <button
+              class="login-registration-btn"
+              onclick="toggleShowRegistration()"
+            >
+              Register
+            </button>
+            <button class="login-sign-in-btn">Sign in</button>
           </div>
-          <a href="#" class="link">Forgot Your Password?</a>
-        </div>
-        <div class="action">
-          <button class="login-registration-btn">Register</button>
-          <button class="login-sign-in-btn">Sign in</button>
-        </div>
-      </form>
+        </form>
+      </div>
+      <div class="registration-form">
+        <form>
+          <h1>Registration</h1>
+          <div class="content">
+            <div class="input-field">
+              <input type="text" placeholder="Name" autocomplete="nope" />
+            </div>
+            <!-- FIX THIS !!!! -->
+            <!-- <div>
+              <input
+                type="date"
+                placeholder="Date of Birth"
+                autocomplete="nope"
+              />
+            </div> -->
+            <div class="input-field">
+              <input type="email" placeholder="Email" autocomplete="nope" />
+            </div>
+            <div class="input-field">
+              <input
+                type="password"
+                placeholder="Password"
+                autocomplete="new-password"
+              />
+            </div>
+            <div class="input-field">
+              <input
+                type="password"
+                placeholder="Confirm Password"
+                autocomplete="new-password"
+              />
+            </div>
+            <a href="#" class="link">Forgot Your Password?</a>
+          </div>
+          <div class="action">
+            <button class="registration-sign-up-btn">SIGN UP</button>
+          </div>
+        </form>
+      </div>
     </div>
   </body>
 </html>

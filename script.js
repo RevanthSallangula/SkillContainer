@@ -5,19 +5,27 @@ const btnContact = document.querySelector(".contact-btn");
 const btnLoginRegiter = document.querySelector(".login-registration-btn");
 const btnLoginSignIn = document.querySelector(".login-sign-in-btn");
 const loginForm = document.querySelector(".login-form");
+const registrationForm = document.querySelector(".registration-form");
 const loggedIn = false;
 
-function closeLogin() {
+function closeAll() {
   loginForm.style.display = "none";
+  registrationForm.style.display = "none";
 }
 
-closeLogin();
+closeAll();
 
-function toggleShow() {
+function toggleShowLogin() {
+  closeAll();
   if (loginForm.style.display === "none") {
     loginForm.style.display = "flex";
-  } else {
-    closeLogin();
+  }
+}
+
+function toggleShowRegistration() {
+  closeAll();
+  if (registrationForm.style.display === "none") {
+    registrationForm.style.display = "flex";
   }
 }
 btnDashboard.addEventListener("click", function () {
@@ -28,11 +36,11 @@ btnDashboard.addEventListener("click", function () {
   }
 });
 btnPricing.addEventListener("click", function () {
-  closeLogin();
+  closeAll();
 });
 btnAbout.addEventListener("click", function () {
-  closeLogin();
+  closeAll();
 });
 btnContact.addEventListener("click", function () {
-  closeLogin();
+  closeAll();
 });
