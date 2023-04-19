@@ -171,8 +171,7 @@ button {
 .btn-close {
   font-size: 22px;
   float: right;
-  padding-right: 22px;
-  padding-top: 15px;
+  padding: 22px;
 }
 
 .btn-close:hover {
