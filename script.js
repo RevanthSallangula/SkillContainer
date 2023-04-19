@@ -20,7 +20,7 @@ closeAll();
 
 function toggleShowLogin() {
   closeAll();
-  if (loginForm.style.display === "none") {
+  if (loginForm.style.display === "none" && loggedIn === false) {
     loginForm.style.display = "flex";
   }
 }
