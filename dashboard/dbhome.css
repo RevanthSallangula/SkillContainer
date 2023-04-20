@@ -20,6 +20,10 @@ button {
   background: none;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 .header {
   border-bottom: 1px solid #e2e8f0;
 }
