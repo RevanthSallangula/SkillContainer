@@ -1,4 +1,5 @@
 const sidebar = document.querySelector(".sidebar");
+const navTitle = document.querySelector(".nav-title");
 const closeBtn = document.querySelector("#btn");
 const searchBtn = document.querySelector(".bx-search");
 const displaySection = document.querySelector(".home-section");
@@ -46,4 +47,5 @@ function closeAllTabs() {
 function displayCurrentTab(name) {
   closeAllTabs();
   document.querySelector(`.home-${name}`).style.display = "flex";
+  navTitle.textContent = name[0].toUpperCase() + name.slice(1);
 }
