@@ -288,3 +288,22 @@ button {
     display: none;
   }
 }
+.home-dashboard {
+  display: none;
+}
+
+.home-user {
+  display: none;
+}
+
+.home-certificates {
+  display: none;
+}
+
+.home-containers {
+  display: none;
+}
+
+.home-settings {
+  display: none;
+}

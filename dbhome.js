@@ -1,7 +1,17 @@
-const profileIcon = document.querySelector("#profile-icon");
-let sidebar = document.querySelector(".sidebar");
-let closeBtn = document.querySelector("#btn");
-let searchBtn = document.querySelector(".bx-search");
+const sidebar = document.querySelector(".sidebar");
+const closeBtn = document.querySelector("#btn");
+const searchBtn = document.querySelector(".bx-search");
+const displaySection = document.querySelector(".home-section");
+const displayDashboard = document.querySelector(".home-dashboard");
+const displayUser = document.querySelector(".home-user");
+const displayCertificates = document.querySelector(".home-certificates");
+const displayContainers = document.querySelector(".home-containers");
+const displaySettings = document.querySelector(".home-settings");
+const btnDashboard = document.querySelector(".navlist-btn-dashboard");
+const btnUser = document.querySelector(".navlist-btn-user");
+const btnCertificates = document.querySelector(".navlist-btn-certificates");
+const btnContainers = document.querySelector(".navlist-btn-containers");
+const btnSettings = document.querySelector(".navlist-btn-settings");
 
 //changing menu buttons
 function menuBtnChange() {
@@ -23,6 +33,17 @@ searchBtn.addEventListener("click", () => {
   menuBtnChange(); //calling the function(optional)
 });
 
-profileIcon.addEventListener("click", function () {
-  console.log("profile.click");
-});
+//close all active tabs
+function closeAllTabs() {
+  displayCertificates.style.display = "none";
+  displayContainers.style.display = "none";
+  displayDashboard.style.display = "none";
+  displaySettings.style.display = "none";
+  displayUser.style.display = "none";
+}
+
+//displays current tab
+function displayCurrentTab(name) {
+  closeAllTabs();
+  document.querySelector(`.home-${name}`).style.display = "flex";
+}

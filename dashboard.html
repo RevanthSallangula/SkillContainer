@@ -30,37 +30,62 @@
           <span class="tooltip">Search</span>
         </li>
         <li>
-          <a href="dashboard.html">
+          <a href="#">
             <i class="bx bx-grid-alt"></i>
-            <button class="links_name">Dashboard</button>
+            <button
+              class="links_name navlist-btn-dashboard"
+              onclick="displayCurrentTab('dashboard')"
+            >
+              Dashboard
+            </button>
           </a>
           <span class="tooltip">Dashboard</span>
         </li>
         <li>
           <a href="#">
             <i class="bx bx-user"></i>
-            <span class="links_name">User</span>
+            <button
+              class="links_name navlist-btn-user"
+              onclick="displayCurrentTab('user')"
+            >
+              User
+            </button>
           </a>
           <span class="tooltip">User</span>
         </li>
         <li>
           <a href="#">
             <i class="bx bx-file"></i>
-            <span class="links_name">Certificates</span>
+            <button
+              class="links_name navlist-btn-certificates"
+              onclick="displayCurrentTab('certificates')"
+            >
+              Certificates
+            </button>
           </a>
           <span class="tooltip">Certificates</span>
         </li>
         <li>
           <a href="#">
             <i class="bx bx-folder"></i>
-            <span class="links_name">Containers</span>
+            <button
+              class="links_name navlist-btn-containers"
+              onclick="displayCurrentTab('containers')"
+            >
+              Containers
+            </button>
           </a>
           <span class="tooltip">Containers</span>
         </li>
         <li>
           <a href="#">
             <i class="bx bx-cog"></i>
-            <span class="links_name">Settings</span>
+            <button
+              class="links_name navlist-btn-settings"
+              onclick="displayCurrentTab('settings')"
+            >
+              Settings
+            </button>
           </a>
           <span class="tooltip">Settings</span>
         </li>
@@ -77,7 +102,11 @@
       </ul>
     </div>
     <section class="home-section">
-      <div class="text">Dashboard</div>
+      <div class="home-dashboard">Dashboard</div>
+      <div class="home-user">User</div>
+      <div class="home-certificates">Certificates</div>
+      <div class="home-containers">Containers</div>
+      <div class="home-settings">Settings</div>
     </section>
     <script></script>
   </body>
