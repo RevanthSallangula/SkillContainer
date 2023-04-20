@@ -46,6 +46,8 @@ function closeAllTabs() {
 //displays current tab
 function displayCurrentTab(name) {
   closeAllTabs();
+  sidebar.classList.toggle("open");
+  menuBtnChange();
   document.querySelector(`.home-${name}`).style.display = "flex";
   navTitle.textContent = name[0].toUpperCase() + name.slice(1);
 }
