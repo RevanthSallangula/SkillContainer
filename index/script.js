@@ -11,7 +11,7 @@ const btnRegistrationSignUp = document.querySelector(
   ".registration-sign-up-btn"
 );
 
-const loggedIn = false;
+const loggedIn = true;
 
 function closeAll() {
   loginForm.style.display = "none";
