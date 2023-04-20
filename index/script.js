@@ -22,6 +22,7 @@ function closeAll() {
 closeAll();
 
 function toggleShowLogin() {
+  closeAll();
   if (loginForm.style.display === "none" && loggedIn === false) {
     loginForm.style.display = "flex";
   }
@@ -34,10 +35,8 @@ function toggleShowRegistration() {
   }
 }
 
-contactForm.style.display = "none";
-
 function toggleShowContact() {
-  console.log(`${contactForm.style.display}`);
+  closeAll();
   if (contactForm.style.display === "none") {
     contactForm.style.display = "flex";
   }
@@ -50,13 +49,4 @@ btnDashboard.addEventListener("click", function () {
     console.log("Already Logged In");
     location.href = "/dashboard/dashboard.html";
   }
-});
-btnPricing.addEventListener("click", function () {
-  closeAll();
-});
-btnAbout.addEventListener("click", function () {
-  closeAll();
-});
-btnContact.addEventListener("click", function () {
-  closeAll();
 });

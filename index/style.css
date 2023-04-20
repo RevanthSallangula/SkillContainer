@@ -88,7 +88,7 @@ button {
   background: #fff;
   width: 500px;
   margin: 65px auto;
-  display: -webkit-box;
+  /* display: -webkit-box; */
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   flex-direction: column;
