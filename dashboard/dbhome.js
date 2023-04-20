@@ -53,3 +53,9 @@ function displayCurrentTab(name) {
   document.querySelector(`.home-${name}`).style.display = "flex";
   navTitle.textContent = name[0].toUpperCase() + name.slice(1);
 }
+
+//Logs Out to index.html
+
+function logOut() {
+  location.href = "/index/index.html";
+}
