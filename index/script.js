@@ -21,8 +21,6 @@ function closeAll() {
 
 closeAll();
 
-contactForm.style.display = "flex";
-
 function toggleShowLogin() {
   if (loginForm.style.display === "none" && loggedIn === false) {
     loginForm.style.display = "flex";
@@ -36,13 +34,15 @@ function toggleShowRegistration() {
   }
 }
 
+contactForm.style.display = "none";
+
 function toggleShowContact() {
-  closeAll();
+  console.log(`${contactForm.style.display}`);
   if (contactForm.style.display === "none") {
     contactForm.style.display = "flex";
-    console.log("cF display:none");
   }
 }
+
 btnDashboard.addEventListener("click", function () {
   if (loggedIn === false) {
     console.log("Not Logged In");
