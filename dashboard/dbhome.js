@@ -57,5 +57,5 @@ function displayCurrentTab(name) {
 //Logs Out to index.html
 
 function logOut() {
-  location.href = "/index/index.html";
+  location.href = "/index.html";
 }
