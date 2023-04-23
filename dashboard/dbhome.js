@@ -25,13 +25,13 @@ function menuBtnChange() {
 
 closeBtn.addEventListener("click", () => {
   sidebar.classList.toggle("open");
-  menuBtnChange(); //calling the function(optional)
+  menuBtnChange();
 });
 
 searchBtn.addEventListener("click", () => {
   // Sidebar open when you click on the search iocn
   sidebar.classList.toggle("open");
-  menuBtnChange(); //calling the function(optional)
+  menuBtnChange();
 });
 
 //close all active tabs
@@ -55,7 +55,6 @@ function displayCurrentTab(name) {
 }
 
 //Logs Out to index.html
-
 function logOut() {
   location.href = "/index.html";
 }
