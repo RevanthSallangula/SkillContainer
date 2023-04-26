@@ -320,14 +320,15 @@ button:hover {
 
 /* Search Button */
 ::selection {
-  background: #12b700;
+  background: #303fac;
 }
 
 .search-wrapper {
   position: absolute;
   transform: translate(-50%, -50%);
-  top: 50%;
+  top: 10%;
   left: 50%;
+  margin-left: 18px;
 }
 
 .search-wrapper .input-holder {
