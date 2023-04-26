@@ -318,6 +318,7 @@ button:hover {
   display: none;
 }
 
+/* Search Button */
 ::selection {
   background: #12b700;
 }
