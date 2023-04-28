@@ -13,8 +13,8 @@ const btnUser = document.querySelector(".navlist-btn-user");
 const btnCertificates = document.querySelector(".navlist-btn-certificates");
 const btnContainers = document.querySelector(".navlist-btn-containers");
 const btnSettings = document.querySelector(".navlist-btn-settings");
-const certificateGrid=document.querySelector("#certificate-grid")
-
+const certificateGrid=document.querySelector("#certificate-grid");
+const containerGrid=document.querySelector("#container-grid");
 //changing menu buttons
 function menuBtnChange() {
   if (sidebar.classList.contains("open")) {
@@ -77,7 +77,12 @@ function searchToggle(obj, evt) {
 }
 // Array to hold certificate elements
 certificateElements = [12,37,3478,238,11];
+containerElements = [12,37,3478,238,11];
 
 for (i of certificateElements){
   certificateGrid.insertAdjacentHTML("beforeEnd",`<div class=\'item item-${i}\'><button onclick="window.open('/dashboard/images/certificateDetailed.jpg')"><img class="grid-image" src="images/certificate.png" alt=""></button></div>`)
+}
+
+for (i of containerElements){
+  containerGrid.insertAdjacentHTML("beforeEnd",`<div class=\'item item-${i}\'><button onclick="window.open('/dashboard/images/certificateDetailed.jpg')"><img class="grid-image" src="images/container.png" alt=""></button></div>`)
 }
