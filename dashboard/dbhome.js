@@ -79,5 +79,5 @@ function searchToggle(obj, evt) {
 certificateElements = [12,37,3478,238,11];
 
 for (i of certificateElements){
-  certificateGrid.insertAdjacentHTML("beforeEnd",`<div class=\'item item-${i}\'><button><img class="grid-image" src="images/certificate.png" alt=""></button></div>`)
+  certificateGrid.insertAdjacentHTML("beforeEnd",`<div class=\'item item-${i}\'><button onclick="window.open('/dashboard/images/certificateDetailed.jpg')"><img class="grid-image" src="images/certificate.png" alt=""></button></div>`)
 }
