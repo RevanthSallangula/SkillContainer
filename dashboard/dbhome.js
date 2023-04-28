@@ -84,5 +84,5 @@ for (i of certificateElements){
 }
 
 for (i of containerElements){
-  containerGrid.insertAdjacentHTML("beforeEnd",`<div class=\'item item-${i}\'><button onclick="window.open('/dashboard/images/certificateDetailed.jpg')"><img class="grid-image" src="images/container.png" alt=""></button></div>`)
+  containerGrid.insertAdjacentHTML("beforeEnd",`<div class=\'item item-${i}\'><button onclick="window.open('/dashboard/images/containerDetailed.png')"><img class="grid-image" src="images/container.png" alt=""></button></div>`)
 }
