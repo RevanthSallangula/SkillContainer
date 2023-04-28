@@ -462,8 +462,20 @@ button:hover {
   top: 10px;
 }
 
-.topPad{
-  padding-top: 140px;
-  left: 50%;
+.grid-container {
+  padding-top:140px;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 100px;
+  border: 2px dashed rgba(114, 186, 94, 0.35);
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.item{
+  background-color: grey;
 }
 /*  */

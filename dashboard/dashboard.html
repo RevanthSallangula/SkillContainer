@@ -102,7 +102,7 @@
     </div>
     <section class="home-section">
       <div class="home-dashboard">Dashboard</div>
-      <div class="home-certificates">
+      <!-- <div class="home-certificates">
         <div class="search-wrapper">
           <div class="input-holder">
             <input
@@ -120,8 +120,26 @@
          <img src="images/certificate.jpg" alt="">
         </div>
 
+      </div> -->
+      <div class="home-certificates">
+        <div class="search-wrapper">
+          <div class="input-holder">
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Type to search"
+            />
+            <button class="search-icon" onclick="searchToggle(this, event);">
+              <span></span>
+            </button>
+          </div>
+          <span class="close" onclick="searchToggle(this, event);"></span>
+        </div>
+        <div id="certificate-grid" class="grid-container">
+          <div class="item item-2">2</div>
+        </div>
       </div>
-      <div class="home-containers">
+      <!-- <div class="home-containers">
         <div class="search-wrapper">
           <div class="input-holder">
             <input
@@ -139,6 +157,32 @@
            <img src="images/containers.jpg" alt="">
         </div>
 
+      </div> -->
+      <div class="home-containers">
+        <div class="search-wrapper">
+          <div class="input-holder">
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Type to search"
+            />
+            <button class="search-icon" onclick="searchToggle(this, event);">
+              <span></span>
+            </button>
+          </div>
+          <span class="close" onclick="searchToggle(this, event);"></span>
+        </div>
+        <div class="grid-container">
+          <div class="item item-1">1</div>
+          <div class="item item-2">2</div>
+          <div class="item item-3">3</div>
+          <div class="item item-4">4</div>
+          <div class="item item-5">5</div>
+          <div class="item item-6">6</div>
+          <div class="item item-7">7</div>
+          <div class="item item-8">8</div>
+          <div class="item item-9">9</div>
+        </div>
       </div>
       <div class="home-user">User</div>
       <div class="home-settings">Settings</div>
