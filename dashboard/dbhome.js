@@ -77,6 +77,7 @@ function searchToggle(obj, evt) {
 
 //Array to hold certificate elements
 certificateElements = [12,37,3478,238,11];
+
 for (i of certificateElements){
-  certificateGrid.insertAdjacentHTML("afterBegin",`<div class=\'item item-${i}\'>${i}</div>`)
+  certificateGrid.insertAdjacentHTML("beforeEnd",`<div class=\'item item-${i}\'>${i}</div>`)
 }
