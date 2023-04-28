@@ -327,6 +327,7 @@ button:hover {
   position: absolute;
   transform: translate(-50%, -50%);
   top: 10%;
+  bottom: 10%;
   left: 50%;
   margin-left: 18px;
 }
