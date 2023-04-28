@@ -57,7 +57,7 @@ button {
 .nav-logo {
   font-size: 2.1rem;
   font-weight: 500;
-  color: #482ff7;
+  color: #475569;
 }
 
 .login-form {
@@ -262,4 +262,7 @@ textarea {
 [type="submit"]:hover {
   background: #5d45fb;
 }
-/*  */
+.content-page{
+  text-align: center;
+  padding-top: 125px;
+}
