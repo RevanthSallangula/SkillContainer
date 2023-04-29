@@ -468,12 +468,14 @@ button:hover {
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-gap: 100px;
-  border: 2px dashed rgba(114, 186, 94, 0.35);
   margin-left: auto;
   margin-right: auto;
 
 }
 
-.item{
-  background-color: grey;
+
+.grid-image{
+  height: 250px ;
+  width: 250px;
+  object-fit: fill ;
 }
