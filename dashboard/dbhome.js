@@ -81,48 +81,48 @@ function searchToggle(obj, evt) {
 // certificateElements = [12, 37, 3478, 238, 11];
 const certificateElements = [
   {
+    index: 1,
     title: "JavaScript Essentials",
     issueDate: "25-07-2021",
     issuedBy: "Google",
-    recentlyAdded: false,
     tags: ["Coding", "Nemesis", "Beethoven"],
   },
   {
+    index: 2,
     title: "JavaScript Essentials",
     issueDate: "25-07-2021",
     issuedBy: "Meta",
-    recentlyAdded: true,
     tags: [],
   },
   {
+    index: 3,
     title: "JavaScript Essentials",
     issueDate: "25-07-2021",
     issuedBy: "Udemy",
-    recentlyAdded: true,
     tags: ["Coding", "Agrippa", "Beetroot"],
   },
   {
+    index: 4,
     title: "JavaScript Essentials",
     issueDate: "25-07-2021",
     issuedBy: "Amazon",
-    recentlyAdded: false,
     tags: ["Beethoven"],
   },
   {
+    index: 5,
     title: "JavaScript Essentials",
     issueDate: "25-07-2021",
     issuedBy: "Apple",
-    recentlyAdded: true,
     tags: ["BigChomp", "Vinyl"],
   },
 ];
 
 for (i of certificateElements) {
-  console.log();
+  console.log(i.index);
   certificateGrid.insertAdjacentHTML(
     "beforeEnd",
     `<div class="certificate-card">
-    <div class="badge">Recently Added</div>
+    <div class="badge">${i.issueDate}</div>
     <div class="certificate-image">
       <img src="images/demo.jpg" alt="" />
     </div>
