@@ -462,7 +462,7 @@ button:hover {
 }
 
 .grid-container {
-  padding-top:140px;
+  padding-top: 140px;
   padding-left: 50px;
   padding-right: 50px;
   display: grid;
@@ -470,12 +470,10 @@ button:hover {
   grid-gap: 100px;
   margin-left: auto;
   margin-right: auto;
-
 }
 
-
-.grid-image{
-  height: 250px ;
+.grid-image {
+  height: 250px;
   width: 250px;
-  object-fit: fill ;
+  object-fit: fill;
 }
