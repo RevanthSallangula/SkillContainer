@@ -471,9 +471,3 @@ button:hover {
   margin-left: auto;
   margin-right: auto;
 }
-
-.grid-image {
-  height: 250px;
-  width: 250px;
-  object-fit: fill;
-}
