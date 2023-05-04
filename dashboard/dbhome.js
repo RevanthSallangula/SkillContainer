@@ -84,7 +84,24 @@ containerElements = [12, 37, 3478, 238, 133];
 for (i of certificateElements) {
   certificateGrid.insertAdjacentHTML(
     "beforeEnd",
-    `<div class=\'item item-${i}\'>${i}</div>`
+    `<div class="certificate-card">
+    <div class="badge">Recently Added</div>
+    <div class="certificate-image">
+      <img src="images/demo.jpg" alt="" />
+    </div>
+    <div class="certificate-details">
+      <span class="certificate-tags">Women | bag</span>
+      <h4>Women leather bag</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero,
+        possimus nostrum!
+      </p>
+      <div class="certificate-bottom-details">
+        <h3>Issued By: </h3>
+        <div class="issued-by">Amazon</div>
+      </div>
+    </div>
+  </div>`
   );
 }
 for (i of containerElements) {
