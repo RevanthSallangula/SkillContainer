@@ -85,6 +85,8 @@ const certificateElements = [
     title: "Introduction to Android Programming",
     issueDate: "25-07-2021",
     issuedBy: "Google",
+    description:
+      "Issued by Google to certify that the holder of this certificate is capable of handling introductory Android programming",
     tags: ["Android", "Coding", "Google"],
   },
   {
@@ -92,6 +94,8 @@ const certificateElements = [
     title: "Programming Essentials",
     issueDate: "05-01-2020",
     issuedBy: "Udemy",
+    description:
+      "Issued by Udemy to certify that the holder of this certificate is capable of handling introductory programming concepts",
     tags: ["Coding", "Udemy"],
   },
   {
@@ -99,6 +103,8 @@ const certificateElements = [
     title: "Introduction to AWS Cloud Services",
     issueDate: "02-05-2023",
     issuedBy: "Amazon",
+    description:
+      "Issued by Amazon to certify that the holder of this certificate has a solid understanding of the processes involved in the functioning of AWS Cloud",
     tags: ["AWS", "Cloud", "Amazon"],
   },
   {
@@ -106,6 +112,8 @@ const certificateElements = [
     title: "JavaScript Essentials",
     issueDate: "25-07-2021",
     issuedBy: "Udemy",
+    description:
+      "Issued by Udemy to certify that the holder of this certificate is capable of handling introductory JavaScript programming",
     tags: ["Coding", "JavaScript", "Udemy"],
   },
   {
@@ -113,6 +121,8 @@ const certificateElements = [
     title: "Beginner's Guide to Swift",
     issueDate: "10-11-2022",
     issuedBy: "Apple",
+    description:
+      "Issued by Apple to certify that the holder of this certificate is capable of handling introductory Swift programming",
     tags: ["Coding", "Swift", "Apple"],
   },
 ];
@@ -130,8 +140,7 @@ for (i of certificateElements) {
       <span class="certificate-tags">${i.tags.join(" | ")}</span>
       <h4>${i.title}</h4>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero,
-        possimus nostrum!
+        ${i.description}
       </p>
       <div class="certificate-bottom-details">
         <h3>Issued By: </h3>
