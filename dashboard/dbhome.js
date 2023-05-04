@@ -90,35 +90,35 @@ const certificateElements = [
   {
     title: "JavaScript Essentials",
     issueDate: "25-07-2021",
-    issuedBy: "Google",
-    recentlyAdded: false,
+    issuedBy: "Meta",
+    recentlyAdded: true,
     tags: [],
   },
   {
     title: "JavaScript Essentials",
     issueDate: "25-07-2021",
-    issuedBy: "Google",
-    recentlyAdded: false,
+    issuedBy: "Udemy",
+    recentlyAdded: true,
     tags: ["Coding", "Agrippa", "Beetroot"],
   },
   {
     title: "JavaScript Essentials",
     issueDate: "25-07-2021",
-    issuedBy: "Google",
+    issuedBy: "Amazon",
     recentlyAdded: false,
     tags: ["Beethoven"],
   },
   {
     title: "JavaScript Essentials",
     issueDate: "25-07-2021",
-    issuedBy: "Google",
-    recentlyAdded: false,
+    issuedBy: "Apple",
+    recentlyAdded: true,
     tags: ["BigChomp", "Vinyl"],
   },
 ];
-containerElements = [12, 37, 3478, 238, 133];
 
 for (i of certificateElements) {
+  console.log();
   certificateGrid.insertAdjacentHTML(
     "beforeEnd",
     `<div class="certificate-card">
@@ -135,12 +135,15 @@ for (i of certificateElements) {
       </p>
       <div class="certificate-bottom-details">
         <h3>Issued By: </h3>
-        <div class="issued-by">Amazon</div>
+        <div class="issued-by">${i.issuedBy}</div>
       </div>
     </div>
   </div>`
   );
 }
+
+containerElements = [12, 37, 3478, 238, 133];
+
 for (i of containerElements) {
   containerGrid.insertAdjacentHTML(
     "beforeEnd",
