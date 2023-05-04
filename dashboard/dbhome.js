@@ -78,7 +78,44 @@ function searchToggle(obj, evt) {
 }
 
 //Array to hold certificate elements and container elements
-certificateElements = [12, 37, 3478, 238, 11];
+// certificateElements = [12, 37, 3478, 238, 11];
+const certificateElements = [
+  {
+    title: "JavaScript Essentials",
+    issueDate: "25-07-2021",
+    issuedBy: "Google",
+    recentlyAdded: false,
+    tags: ["Coding", "Nemesis", "Beethoven"],
+  },
+  {
+    title: "JavaScript Essentials",
+    issueDate: "25-07-2021",
+    issuedBy: "Google",
+    recentlyAdded: false,
+    tags: [],
+  },
+  {
+    title: "JavaScript Essentials",
+    issueDate: "25-07-2021",
+    issuedBy: "Google",
+    recentlyAdded: false,
+    tags: ["Coding", "Agrippa", "Beetroot"],
+  },
+  {
+    title: "JavaScript Essentials",
+    issueDate: "25-07-2021",
+    issuedBy: "Google",
+    recentlyAdded: false,
+    tags: ["Beethoven"],
+  },
+  {
+    title: "JavaScript Essentials",
+    issueDate: "25-07-2021",
+    issuedBy: "Google",
+    recentlyAdded: false,
+    tags: ["BigChomp", "Vinyl"],
+  },
+];
 containerElements = [12, 37, 3478, 238, 133];
 
 for (i of certificateElements) {
@@ -90,8 +127,8 @@ for (i of certificateElements) {
       <img src="images/demo.jpg" alt="" />
     </div>
     <div class="certificate-details">
-      <span class="certificate-tags">Women | bag</span>
-      <h4>Women leather bag</h4>
+      <span class="certificate-tags">${i.tags.join(" | ")}</span>
+      <h4>${i.title}</h4>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero,
         possimus nostrum!

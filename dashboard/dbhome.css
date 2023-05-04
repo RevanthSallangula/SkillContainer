@@ -519,18 +519,13 @@ button:hover {
   margin-bottom: 18px;
 }
 
-.certificate-details h4 a {
-  font-weight: 500;
+.certificate-details h4 {
+  font-size: 20px;
+  font-weight: 2000;
   display: block;
   margin-bottom: 18px;
   text-transform: uppercase;
   color: #363636;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.certificate-details h4 a:hover {
-  color: #fbb72c;
 }
 
 .certificate-details p {
