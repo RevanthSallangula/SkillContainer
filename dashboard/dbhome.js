@@ -92,7 +92,7 @@ const certificateElements = [
     title: "JavaScript Essentials",
     issueDate: "25-07-2021",
     issuedBy: "Meta",
-    tags: [],
+    tags: ["Germany"],
   },
   {
     index: 3,
