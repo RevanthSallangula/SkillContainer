@@ -78,42 +78,42 @@ function searchToggle(obj, evt) {
 }
 
 //Array to hold certificate elements and container elements
-// certificateElements = [12, 37, 3478, 238, 11];
+// certificateElements acting as call from BE
 const certificateElements = [
   {
     index: 1,
-    title: "JavaScript Essentials",
+    title: "Introduction to Android Programming",
     issueDate: "25-07-2021",
     issuedBy: "Google",
-    tags: ["Coding", "Nemesis", "Beethoven"],
+    tags: ["Android", "Coding", "Google"],
   },
   {
     index: 2,
-    title: "JavaScript Essentials",
-    issueDate: "25-07-2021",
-    issuedBy: "Meta",
-    tags: ["Germany"],
+    title: "Programming Essentials",
+    issueDate: "05-01-2020",
+    issuedBy: "Udemy",
+    tags: ["Coding", "Udemy"],
   },
   {
     index: 3,
-    title: "JavaScript Essentials",
-    issueDate: "25-07-2021",
-    issuedBy: "Udemy",
-    tags: ["Coding", "Agrippa", "Beetroot"],
+    title: "Introduction to AWS Cloud Services",
+    issueDate: "02-05-2023",
+    issuedBy: "Amazon",
+    tags: ["AWS", "Cloud", "Amazon"],
   },
   {
     index: 4,
     title: "JavaScript Essentials",
     issueDate: "25-07-2021",
-    issuedBy: "Amazon",
-    tags: ["Beethoven"],
+    issuedBy: "Udemy",
+    tags: ["Coding", "JavaScript", "Udemy"],
   },
   {
     index: 5,
-    title: "JavaScript Essentials",
-    issueDate: "25-07-2021",
+    title: "Beginner's Guide to Swift",
+    issueDate: "10-11-2022",
     issuedBy: "Apple",
-    tags: ["BigChomp", "Vinyl"],
+    tags: ["Coding", "Swift", "Apple"],
   },
 ];
 
