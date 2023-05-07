@@ -14,6 +14,7 @@ const btnCertificates = document.querySelector(".navlist-btn-certificates");
 const btnContainers = document.querySelector(".navlist-btn-containers");
 const btnSettings = document.querySelector(".navlist-btn-settings");
 const certificateGrid = document.querySelector("#certificate-grid");
+const certificateCard = document.querySelectorAll(".certificate-card");
 const containerGrid = document.querySelector("#container-grid");
 const searchInputCertificate = document.querySelector(
   ".search-input-certificate"
@@ -155,6 +156,8 @@ for (i of certificateElements) {
 }
 searchInputCertificate.addEventListener("keyup", function () {
   if (searchInputCertificate.value != "") {
+    //Hide all Visible Certificates
+    //Display Certificates whose properties are similar to those of in search box
   }
 });
 
