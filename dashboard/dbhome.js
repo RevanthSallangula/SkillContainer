@@ -162,8 +162,8 @@ searchInputCertificate.addEventListener("keyup", function () {
   if (searchInputCertificate.value != "") {
     for (i in certificateElements) {
       document.querySelector(`#certificate-${Number(i) + 1}`).style.opacity = 0;
+      if(searchInputCertificate.value)
     }
-    //Hide all Visible Certificates
     //Display Certificates whose properties are similar to those of in search box
   } else {
     for (i in certificateElements) {
