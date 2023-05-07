@@ -132,10 +132,9 @@ const certificateElements = [
 ];
 
 for (i of certificateElements) {
-  console.log(i.index);
   certificateGrid.insertAdjacentHTML(
     "beforeEnd",
-    `<div class="certificate-card">
+    `<div id="certificate-${i.index}" class="certificate-card">
     <div class="badge">${i.issueDate}</div>
     <div class="certificate-image">
       <img src="images/demo.jpg" alt="" />
@@ -154,6 +153,10 @@ for (i of certificateElements) {
   </div>`
   );
 }
+searchInputCertificate.addEventListener("keyup", function () {
+  if (searchInputCertificate.value != "") {
+  }
+});
 
 containerElements = [12, 37, 3478, 238, 133];
 

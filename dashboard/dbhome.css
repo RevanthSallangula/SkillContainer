@@ -473,6 +473,7 @@ button:hover {
 }
 
 .certificate-card {
+  display: block;
   width: 300px;
   position: relative;
   box-shadow: 0 2px 7px #dfdfdf;
