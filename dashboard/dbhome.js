@@ -156,6 +156,6 @@ containerElements = [12, 37, 3478, 238, 133];
 for (i of containerElements) {
   containerGrid.insertAdjacentHTML(
     "beforeEnd",
-    `<div class=\'item item-${i}\'>${i}</div>`
+    `<div class='item item-${i}'>${i}</div>`
   );
 }
