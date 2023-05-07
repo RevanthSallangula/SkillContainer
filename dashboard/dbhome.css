@@ -326,7 +326,7 @@ button:hover {
 .search-wrapper {
   position: absolute;
   transform: translate(-50%, -50%);
-  top: 5%;
+  top: 10%;
   left: 51.5%;
 }
 
