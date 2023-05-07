@@ -135,7 +135,9 @@ const certificateElements = [
 for (i of certificateElements) {
   certificateGrid.insertAdjacentHTML(
     "beforeEnd",
-    `<div id="certificate-${i.index}" class="certificate-card">
+    `<div id="certificate-${
+      i.index
+    }" class="certificate-card" style="opacity:1">
     <div class="badge">${i.issueDate}</div>
     <div class="certificate-image">
       <img src="images/demo.jpg" alt="" />
@@ -154,10 +156,19 @@ for (i of certificateElements) {
   </div>`
   );
 }
+
+//Cerificate Search Functioning
 searchInputCertificate.addEventListener("keyup", function () {
   if (searchInputCertificate.value != "") {
+    for (i in certificateElements) {
+      document.querySelector(`#certificate-${Number(i) + 1}`).style.opacity = 0;
+    }
     //Hide all Visible Certificates
     //Display Certificates whose properties are similar to those of in search box
+  } else {
+    for (i in certificateElements) {
+      document.querySelector(`#certificate-${Number(i) + 1}`).style.opacity = 1;
+    }
   }
 });
 
