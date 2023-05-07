@@ -137,7 +137,7 @@ for (i of certificateElements) {
     "beforeEnd",
     `<div id="certificate-${
       i.index
-    }" class="certificate-card" style="opacity:1">
+    }" class="certificate-card" style="display:block">
     <div class="badge">${i.issueDate}</div>
     <div class="certificate-image">
       <img src="images/demo.jpg" alt="" />
@@ -161,18 +161,27 @@ for (i of certificateElements) {
 searchInputCertificate.addEventListener("keyup", function () {
   if (searchInputCertificate.value != "") {
     for (i in certificateElements) {
-      document.querySelector(`#certificate-${Number(i) + 1}`).style.opacity = 0;
+      document.querySelector(`#certificate-${Number(i) + 1}`).style.display =
+        "none";
       let certificateSearchElements = Object.values(certificateElements[`${i}`])
         .flat()
         .toString()
         .toLowerCase()
         .split(",");
-      console.log(certificateSearchElements);
+      if (
+        certificateSearchElements.some((item) =>
+          item.includes(searchInputCertificate.value.toLowerCase())
+        )
+      ) {
+        document.querySelector(`#certificate-${Number(i) + 1}`).style.display =
+          "block";
+      }
     }
     //Display Certificates whose properties are similar to those of in search box
   } else {
     for (i in certificateElements) {
-      document.querySelector(`#certificate-${Number(i) + 1}`).style.opacity = 1;
+      document.querySelector(`#certificate-${Number(i) + 1}`).style.display =
+        "block";
     }
   }
 });
