@@ -79,6 +79,10 @@ function searchToggle(obj, evt) {
     container.removeClass("active");
     // clear input
     container.find(".search-input").val("");
+    for (i in certificateElements) {
+      document.querySelector(`#certificate-${Number(i) + 1}`).style.display =
+        "block";
+    }
   }
 }
 
