@@ -15,6 +15,10 @@ const btnContainers = document.querySelector(".navlist-btn-containers");
 const btnSettings = document.querySelector(".navlist-btn-settings");
 const certificateGrid = document.querySelector("#certificate-grid");
 const containerGrid = document.querySelector("#container-grid");
+const searchInputCertificate = document.querySelector(
+  ".search-input-certificate"
+);
+const searchInputContainer = document.querySelector(".search-input-container");
 
 //changing menu buttons
 function menuBtnChange() {
