@@ -162,7 +162,12 @@ searchInputCertificate.addEventListener("keyup", function () {
   if (searchInputCertificate.value != "") {
     for (i in certificateElements) {
       document.querySelector(`#certificate-${Number(i) + 1}`).style.opacity = 0;
-      console.log(Object.values(certificateElements[`${i}`]).flat());
+      let certificateSearchElements = Object.values(certificateElements[`${i}`])
+        .flat()
+        .toString()
+        .toLowerCase()
+        .split(",");
+      console.log(certificateSearchElements);
     }
     //Display Certificates whose properties are similar to those of in search box
   } else {
