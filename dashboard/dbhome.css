@@ -325,9 +325,9 @@ button:hover {
 
 .search-wrapper {
   position: absolute;
-  transform: translate(-50%, -50%);
-  top: 10%;
-  left: 51.5%;
+  transform: translate(-50%, 0%);
+  top: 5%;
+  left: 50%;
 }
 
 .search-wrapper .input-holder {
@@ -462,9 +462,9 @@ button:hover {
 }
 
 .grid-container {
-  padding-top: 140px;
-  padding-left: 50px;
-  padding-right: 50px;
+  margin-top: 140px;
+  padding-left: auto;
+  padding-right: auto;
   display: grid;
   grid-template-columns: auto auto auto;
   grid-gap: 100px;
