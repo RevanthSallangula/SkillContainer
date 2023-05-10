@@ -166,7 +166,6 @@ for (i of certificateElements) {
 searchInputCertificate.addEventListener("keyup", function () {
   if (searchInputCertificate.value != "") {
     for (i in certificateElements) {
-      console.log(certificateElements[i].index);
       let certificateSearchElements = Object.values(certificateElements[`${i}`])
         .flat()
         .toString()
