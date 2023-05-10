@@ -165,13 +165,13 @@ for (i of certificateElements) {
 searchInputCertificate.addEventListener("keyup", function () {
   if (searchInputCertificate.value != "") {
     for (i in certificateElements) {
-      document.querySelector(`#certificate-${Number(i) + 1}`).style.display =
-        "none";
       let certificateSearchElements = Object.values(certificateElements[`${i}`])
         .flat()
         .toString()
         .toLowerCase()
         .split(",");
+      document.querySelector(`#certificate-${Number(i) + 1}`).style.display =
+        "none";
       if (
         certificateSearchElements.some((item) =>
           item.includes(searchInputCertificate.value.toLowerCase())
