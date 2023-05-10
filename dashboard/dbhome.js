@@ -80,8 +80,9 @@ function searchToggle(obj, evt) {
     // clear input
     container.find(".search-input").val("");
     for (i in certificateElements) {
-      document.querySelector(`#certificate-${Number(i) + 1}`).style.display =
-        "block";
+      document.querySelector(
+        `#certificate-${certificateElements[i].index}`
+      ).style.display = "block";
     }
   }
 }
@@ -90,7 +91,7 @@ function searchToggle(obj, evt) {
 // certificateElements acting as call from BE
 const certificateElements = [
   {
-    index: 1,
+    index: 16,
     title: "Introduction to Android Programming",
     issueDate: "25-07-2021",
     issuedBy: "Google",
@@ -99,7 +100,7 @@ const certificateElements = [
     tags: ["Android", "Coding", "Google"],
   },
   {
-    index: 2,
+    index: 12,
     title: "Programming Essentials",
     issueDate: "05-01-2020",
     issuedBy: "Udemy",
@@ -108,7 +109,7 @@ const certificateElements = [
     tags: ["Coding", "Udemy"],
   },
   {
-    index: 3,
+    index: 31,
     title: "Introduction to AWS Cloud Services",
     issueDate: "02-05-2023",
     issuedBy: "Amazon",
@@ -117,7 +118,7 @@ const certificateElements = [
     tags: ["AWS", "Cloud", "Amazon"],
   },
   {
-    index: 4,
+    index: 42,
     title: "JavaScript Essentials",
     issueDate: "25-07-2021",
     issuedBy: "Udemy",
@@ -126,7 +127,7 @@ const certificateElements = [
     tags: ["Coding", "JavaScript", "Udemy"],
   },
   {
-    index: 5,
+    index: 15,
     title: "Beginner's Guide to Swift",
     issueDate: "10-11-2022",
     issuedBy: "Apple",
@@ -165,27 +166,33 @@ for (i of certificateElements) {
 searchInputCertificate.addEventListener("keyup", function () {
   if (searchInputCertificate.value != "") {
     for (i in certificateElements) {
+      console.log(certificateElements[i].index);
       let certificateSearchElements = Object.values(certificateElements[`${i}`])
         .flat()
         .toString()
         .toLowerCase()
         .split(",");
-      document.querySelector(`#certificate-${Number(i) + 1}`).style.display =
-        "none";
+      document.querySelector(
+        `#certificate-${certificateElements[i].index}`
+      ).style.display = "none";
       if (
         certificateSearchElements.some((item) =>
           item.includes(searchInputCertificate.value.toLowerCase())
         )
       ) {
-        document.querySelector(`#certificate-${Number(i) + 1}`).style.display =
-          "block";
+        document.querySelector(
+          `#certificate-${certificateElements[i].index}`
+        ).style.display = "block";
       }
     }
-    //Display Certificates whose properties are similar to those of in search box
+    //Else part meant to show display of All blocks
+    //But the code somehow works without the 'else' part
+    //Delete if you want to save some space
   } else {
     for (i in certificateElements) {
-      document.querySelector(`#certificate-${Number(i) + 1}`).style.display =
-        "block";
+      document.querySelector(
+        `#certificate-${certificateElements[i].index}`
+      ).style.display = "block";
     }
   }
 });
