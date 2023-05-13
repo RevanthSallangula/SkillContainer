@@ -534,12 +534,6 @@ button:hover {
   color: #999;
 }
 
-.product-bottom-details {
-  overflow: hidden;
-  border-top: 1px solid #eee;
-  padding-top: 20px;
-}
-
 .certificate-bottom-details div {
   float: left;
   width: 50%;

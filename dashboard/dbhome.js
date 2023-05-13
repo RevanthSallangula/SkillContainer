@@ -196,11 +196,16 @@ searchInputCertificate.addEventListener("keyup", function () {
   }
 });
 
-containerElements = [12, 37, 3478, 238, 133, 34, 34, 534, 634, 123];
+containerElements = [
+  { index: 1, title: "Udemy Certificates" },
+  { index: 2, title: "Google Certificates" },
+  { index: 3, title: "Amazon Certificates" },
+  { index: 4, title: "Apple Certificates" },
+];
 
 for (i of containerElements) {
   containerGrid.insertAdjacentHTML(
     "beforeEnd",
-    `<div class='item item-${i}'>${i}</div>`
+    `<div id="container-${i.index}" class="container-card" style="display:block">${i.index}:${i.title}</div>`
   );
 }
