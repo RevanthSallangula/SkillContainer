@@ -545,3 +545,10 @@ button:hover {
   font-weight: 600;
   padding-bottom: 20px;
 }
+
+.container-card {
+  width: 300px;
+  position: relative;
+  margin: 20px auto;
+  background: #fafafa;
+}
