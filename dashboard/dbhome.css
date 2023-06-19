@@ -299,7 +299,7 @@ button:hover {
   }
 }
 .home-dashboard {
-  display: none;
+  display: flex;
 }
 
 .home-user {
