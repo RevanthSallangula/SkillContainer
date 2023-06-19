@@ -279,13 +279,13 @@ button:hover {
   top: 0;
   padding-left: 78px;
   width: auto;
-  transition: all 0.5s ease;
+  transition: all 0.4s ease;
   z-index: 2;
 }
 .sidebar.open ~ .home-section {
-  padding-left: 250px;
-  width: calc(auto +250px);
+  padding-left: 328px;
 }
+
 .home-section .text {
   display: inline-block;
   color: #11101d;
