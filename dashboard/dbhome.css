@@ -277,8 +277,8 @@ button:hover {
   background: #e4e9f7;
   min-height: 100vh;
   top: 0;
-  left: 78px;
-  width: calc(100% - 78px);
+  padding-left: 78px;
+  width: auto;
   transition: all 0.5s ease;
   z-index: 2;
 }
