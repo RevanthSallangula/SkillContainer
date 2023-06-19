@@ -59,7 +59,7 @@ button:hover {
   background: #11101d;
   padding: 6px 14px;
   z-index: 99;
-  transition: all 0.5s ease;
+  transition: all 0.4s ease;
 }
 .sidebar.open {
   width: 250px;
@@ -72,14 +72,14 @@ button:hover {
 }
 .sidebar .logo-details .icon {
   opacity: 0;
-  transition: all 0.5s ease;
+  transition: all 0.4s ease;
 }
 .sidebar .logo-details .logo_name {
   color: #fff;
   font-size: 20px;
   font-weight: 600;
   opacity: 0;
-  transition: all 0.5s ease;
+  transition: all 0.4s ease;
 }
 .sidebar.open .logo-details .icon,
 .sidebar.open .logo-details .logo_name {
@@ -95,7 +95,7 @@ button:hover {
   font-size: 23px;
   text-align: center;
   cursor: pointer;
-  transition: all 0.5s ease;
+  transition: all 0.4s ease;
 }
 .sidebar.open .logo-details #btn {
   text-align: right;
@@ -153,7 +153,7 @@ button:hover {
   width: 50px;
   border: none;
   border-radius: 12px;
-  transition: all 0.5s ease;
+  transition: all 0.4s ease;
   background: #1d1b31;
 }
 .sidebar.open input {
@@ -205,7 +205,7 @@ button:hover {
 }
 .sidebar li a:hover .links_name,
 .sidebar li a:hover i {
-  transition: all 0.5s ease;
+  transition: all 0.4s ease;
   color: #11101d;
 }
 .sidebar li i {
@@ -222,7 +222,7 @@ button:hover {
   bottom: -8px;
   padding: 10px 14px;
   background: #2d2954;
-  transition: all 0.5s ease;
+  transition: all 0.4s ease;
   overflow: hidden;
 }
 .sidebar.open li.profile {
@@ -260,7 +260,7 @@ button:hover {
   height: 60px;
   line-height: 60px;
   border-radius: 0px;
-  transition: all 0.5s ease;
+  transition: all 0.4s ease;
 }
 .sidebar.open .profile #log_out {
   width: 50px;
@@ -276,6 +276,7 @@ button:hover {
   position: relative;
   background: #e4e9f7;
   min-height: 100vh;
+  left: 0px;
   top: 0;
   padding-left: 78px;
   width: auto;
@@ -283,7 +284,7 @@ button:hover {
   z-index: 2;
 }
 .sidebar.open ~ .home-section {
-  padding-left: 328px;
+  left: 172px;
 }
 
 .home-section .text {
@@ -344,7 +345,7 @@ button:hover {
   width: 450px;
   border-radius: 50px;
   background: #1d1b31;
-  transition: all 0.5s cubic-bezier(0, 0.105, 0.035, 1.57);
+  transition: all 0.4s cubic-bezier(0, 0.105, 0.035, 1.57);
 }
 .search-wrapper .input-holder .search-input {
   width: 100%;
@@ -440,7 +441,7 @@ button:hover {
   right: -50px;
   transform: rotate(45deg);
   transition: all 0.6s cubic-bezier(0, 0.105, 0.035, 1.57);
-  transition-delay: 0.5s;
+  transition-delay: 0.4s;
 }
 .search-wrapper .close::before,
 .search-wrapper .close::after {
