@@ -197,10 +197,10 @@ searchInputCertificate.addEventListener("keyup", function () {
 });
 
 containerElements = [
-  { index: 1, title: "Udemy Certificates" },
-  { index: 2, title: "Google Certificates" },
-  { index: 3, title: "Amazon Certificates" },
-  { index: 4, title: "Apple Certificates" },
+  { index: 1, title: "Udemy Certificates", count: 7, date: "12-09-2018" },
+  { index: 2, title: "Google Certificates", count: 12, date: "10-11-2018" },
+  { index: 3, title: "Amazon Certificates", count: 4, date: "19-01-2012" },
+  { index: 4, title: "Apple Certificates", count: 12, date: "10-01-2022" },
 ];
 
 for (i of containerElements) {
