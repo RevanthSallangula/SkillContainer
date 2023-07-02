@@ -200,12 +200,26 @@ containerElements = [
   { index: 1, title: "Udemy Certificates", count: 7, date: "12-09-2018" },
   { index: 2, title: "Google Certificates", count: 12, date: "10-11-2018" },
   { index: 3, title: "Amazon Certificates", count: 4, date: "19-01-2012" },
-  { index: 4, title: "Apple Certificates", count: 12, date: "10-01-2022" },
+  { index: 4, title: "Apple Certificates", count: 10, date: "10-01-2022" },
+  { index: 5, title: "Meta Certificates", count: 12, date: "10-01-2022" },
+  { index: 6, title: "Coursera Certificates", count: 16, date: "10-01-2022" },
+  { index: 7, title: "FCC Certificates", count: 7, date: "10-01-2022" },
+  { index: 8, title: "KA Certificates", count: 2, date: "10-01-2022" },
 ];
 
 for (i of containerElements) {
   containerGrid.insertAdjacentHTML(
     "beforeEnd",
-    `<div id="container-${i.index}" class="container-card" style="display:block">${i.index}:${i.title}</div>`
+    `<div class="container-card split">
+    <div class="container-image">
+      <img src="images/demo.jpg" alt="" />
+    </div>
+    <div class="content">
+      <h1>${i.title}</h1>
+     <h3>Last Accessed: ${i.date}</h3>
+     <h3>Number of Cerificates: ${i.count}</h3>
+    </div>
+  </div>
+`
   );
 }
