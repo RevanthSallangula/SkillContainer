@@ -79,9 +79,15 @@ function searchToggle(obj, evt) {
     container.removeClass("active");
     // clear input
     container.find(".search-input").val("");
+    //Code to Display all cards of certificates and containers after closing the search input
     for (i in certificateElements) {
       document.querySelector(
         `#certificate-${certificateElements[i].index}`
+      ).style.display = "block";
+    }
+    for (i in containerElements) {
+      document.querySelector(
+        `#container-${containerElements[i].index}`
       ).style.display = "block";
     }
   }
@@ -187,12 +193,6 @@ searchInputCertificate.addEventListener("keyup", function () {
     //Else part meant to show display of All blocks
     //But the code somehow works without the 'else' part
     //Delete if you want to save some space
-  } else {
-    for (i in certificateElements) {
-      document.querySelector(
-        `#certificate-${certificateElements[i].index}`
-      ).style.display = "block";
-    }
   }
 });
 
@@ -210,7 +210,7 @@ containerElements = [
 for (i of containerElements) {
   containerGrid.insertAdjacentHTML(
     "beforeEnd",
-    `<div class="container-card split">
+    `<div id="container-${i.index}" class="container-card split" style="display:block">
     <div class="container-image">
       <img src="images/demo.jpg" alt="" />
     </div>
@@ -223,3 +223,30 @@ for (i of containerElements) {
 `
   );
 }
+
+searchInputContainer.addEventListener("keyup", function () {
+  if (searchInputContainer.value != "") {
+    for (i in containerElements) {
+      let containerSearchElements = Object.values(containerElements[`${i}`])
+        .flat()
+        .toString()
+        .toLowerCase()
+        .split(",");
+      document.querySelector(
+        `#container-${containerElements[i].index}`
+      ).style.display = "none";
+      if (
+        containerSearchElements.some((item) =>
+          item.includes(searchInputContainer.value.toLowerCase())
+        )
+      ) {
+        document.querySelector(
+          `#container-${containerElements[i].index}`
+        ).style.display = "block";
+      }
+    }
+    //Else part meant to show display of All blocks
+    //But the code somehow works without the 'else' part
+    //Delete if you want to save some space
+  }
+});
