@@ -193,6 +193,12 @@ searchInputCertificate.addEventListener("keyup", function () {
     //Else part meant to show display of All blocks
     //But the code somehow works without the 'else' part
     //Delete if you want to save some space
+    } else {
+    for (i in certificateElements) {
+      document.querySelector(
+        `#certificate-${certificateElements[i].index}`
+      ).style.display = "block";
+    }
   }
 });
 
@@ -248,5 +254,11 @@ searchInputContainer.addEventListener("keyup", function () {
     //Else part meant to show display of All blocks
     //But the code somehow works without the 'else' part
     //Delete if you want to save some space
+    } else {
+    for (i in containerElements) {
+      document.querySelector(
+        `#container-${containerElements[i].index}`
+      ).style.display = "block";
+    }
   }
 });
