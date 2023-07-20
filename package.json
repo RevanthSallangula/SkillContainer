@@ -1,0 +1,11 @@
+{
+    "name": "skillcontainer",
+    "version": "1.0.0",
+    "description": "An application for storing and sharing your academic and skill-based certifications in a secure, contained way!",
+    "main": "script.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Revanth Sallangula",
+    "license": "ISC"
+}
