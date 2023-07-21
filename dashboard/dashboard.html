@@ -1,144 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="/jquery-3.6.4.min.js"></script>
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <title>Dashboard</title>
-  </head>
-  <body>
-    <link rel="stylesheet" href="dbhome.css" />
-    <script defer src="dbhome.js"></script>
-    <header class="header">
-      <nav class="navbar">
-        <a href="#" class="nav-title" style="padding-left: 80px">Dashboard</a>
-      </nav>
-    </header>
-    <div class="sidebar">
-      <div class="logo-details">
-        <div class="logo_name">SkillContainer</div>
-        <i class="bx bx-menu" id="btn"></i>
-      </div>
-      <ul class="nav-list">
-        <li>
-          <i class="bx bx-search"></i>
-          <input type="text" placeholder="Search..." />
-          <span class="tooltip">Search</span>
-        </li>
-        <li>
-          <a
-            href="#"
-            class="navlist-btn-dashboard"
-            onclick="displayCurrentTab('dashboard')"
-          >
-            <i class="bx bx-grid-alt"></i>
-            <button class="links_name">Dashboard</button>
-          </a>
-          <span class="tooltip">Dashboard</span>
-        </li>
-        <li>
-          <a
-            href="#"
-            class="navlist-btn-certificates"
-            onclick="displayCurrentTab('certificates')"
-          >
-            <i class="bx bx-file"></i>
-            <button class="links_name">Certificates</button>
-          </a>
-          <span class="tooltip">Certificates</span>
-        </li>
-        <li>
-          <a
-            href="#"
-            class="navlist-btn-containers"
-            onclick="displayCurrentTab('containers')"
-          >
-            <i class="bx bx-folder"></i>
-            <button class="links_name">Containers</button>
-          </a>
-          <span class="tooltip">Containers</span>
-        </li>
-        <li>
-          <a
-            href="#"
-            class="navlist-btn-user"
-            onclick="displayCurrentTab('user')"
-          >
-            <i class="bx bx-user"></i>
-            <button class="links_name">User</button>
-          </a>
-          <span class="tooltip">User</span>
-        </li>
-        <li>
-          <a
-            href="#"
-            class="navlist-btn-settings"
-            onclick="displayCurrentTab('settings')"
-          >
-            <i class="bx bx-cog"></i>
-            <button class="links_name">Settings</button>
-          </a>
-          <span class="tooltip">Settings</span>
-        </li>
-        <li class="profile">
-          <div class="profile-details">
-            <img id="profile-icon" src="images/profile_icon.svg" alt="" />
-            <div class="name_job">
-              <div class="name">Username</div>
-              <div class="job">Title</div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+        <link
+            href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+        <title>Dashboard</title>
+    </head>
+    <body>
+        <link rel="stylesheet" href="dbhome.css" />
+        <script defer src="dbhome.js"></script>
+        <header class="header">
+            <nav class="navbar">
+                <a href="#" class="nav-title" style="padding-left: 80px"
+                    >Dashboard</a
+                >
+            </nav>
+        </header>
+        <div class="sidebar">
+            <div class="logo-details">
+                <div class="logo_name">SkillContainer</div>
+                <i class="bx bx-menu" id="btn"></i>
             </div>
-          </div>
-          <button onclick="logOut()">
-            <i class="bx bx-log-out" id="log_out"></i>
-          </button>
-        </li>
-      </ul>
-    </div>
-    <section class="home-section">
-      <div class="home-dashboard">Dashboard</div>
-      <div class="home-certificates">
-        <div class="search-wrapper">
-          <div class="input-holder">
-            <input
-              type="text"
-              class="search-input search-input-certificate"
-              placeholder="Type to search"
-            />
-            <button class="search-icon" onclick="searchToggle(this, event);">
-              <span></span>
-            </button>
-          </div>
-          <span class="close" onclick="searchToggle(this, event);"></span>
+            <ul class="nav-list">
+                <li>
+                    <i class="bx bx-search"></i>
+                    <input type="text" placeholder="Search..." />
+                    <span class="tooltip">Search</span>
+                </li>
+                <li>
+                    <a
+                        href="#"
+                        class="navlist-btn-dashboard"
+                        onclick="displayCurrentTab('dashboard')"
+                    >
+                        <i class="bx bx-grid-alt"></i>
+                        <button class="links_name">Dashboard</button>
+                    </a>
+                    <span class="tooltip">Dashboard</span>
+                </li>
+                <li>
+                    <a
+                        href="#"
+                        class="navlist-btn-certificates"
+                        onclick="displayCurrentTab('certificates')"
+                    >
+                        <i class="bx bx-file"></i>
+                        <button class="links_name">Certificates</button>
+                    </a>
+                    <span class="tooltip">Certificates</span>
+                </li>
+                <li>
+                    <a
+                        href="#"
+                        class="navlist-btn-containers"
+                        onclick="displayCurrentTab('containers')"
+                    >
+                        <i class="bx bx-folder"></i>
+                        <button class="links_name">Containers</button>
+                    </a>
+                    <span class="tooltip">Containers</span>
+                </li>
+                <li>
+                    <a
+                        href="#"
+                        class="navlist-btn-user"
+                        onclick="displayCurrentTab('user')"
+                    >
+                        <i class="bx bx-user"></i>
+                        <button class="links_name">User</button>
+                    </a>
+                    <span class="tooltip">User</span>
+                </li>
+                <li>
+                    <a
+                        href="#"
+                        class="navlist-btn-settings"
+                        onclick="displayCurrentTab('settings')"
+                    >
+                        <i class="bx bx-cog"></i>
+                        <button class="links_name">Settings</button>
+                    </a>
+                    <span class="tooltip">Settings</span>
+                </li>
+                <li class="profile">
+                    <div class="profile-details">
+                        <img
+                            id="profile-icon"
+                            src="images/profile_icon.svg"
+                            alt=""
+                        />
+                        <div class="name_job">
+                            <div class="name">Username</div>
+                            <div class="job">Title</div>
+                        </div>
+                    </div>
+                    <button onclick="logOut()">
+                        <i class="bx bx-log-out" id="log_out"></i>
+                    </button>
+                </li>
+            </ul>
         </div>
-        <div id="certificate-grid" class="grid-container">
-          <!-- reuiehdkc -->
-        </div>
-      </div>
-      <div class="home-containers">
-        <div class="search-wrapper">
-          <div class="input-holder">
-            <input
-              type="text"
-              class="search-input search-input-container"
-              placeholder="Type to search"
-            />
-            <button class="search-icon" onclick="searchToggle(this, event);">
-              <span></span>
-            </button>
-          </div>
-          <span class="close" onclick="searchToggle(this, event);"></span>
-        </div>
-        <div id="container-grid" class="grid-container">
-          <!-- reuiehdkc -->
-        </div>
-      </div>
-      <div class="home-user">User</div>
-      <div class="home-settings">Settings</div>
-    </section>
-  </body>
+        <section class="home-section">
+            <div class="home-dashboard">Dashboard</div>
+            <div class="home-certificates">
+                <div class="search-wrapper">
+                    <div class="input-holder">
+                        <input
+                            type="text"
+                            class="search-input search-input-certificate"
+                            placeholder="Type to search"
+                        />
+                        <button
+                            class="search-icon"
+                            onclick="searchToggle(this, event);"
+                        >
+                            <span></span>
+                        </button>
+                    </div>
+                    <span
+                        class="close"
+                        onclick="searchToggle(this, event);"
+                    ></span>
+                </div>
+                <div id="certificate-grid" class="grid-container">
+                    <!-- reuiehdkc -->
+                </div>
+            </div>
+            <div class="home-containers">
+                <div class="search-wrapper">
+                    <div class="input-holder">
+                        <input
+                            type="text"
+                            class="search-input search-input-container"
+                            placeholder="Type to search"
+                        />
+                        <button
+                            class="search-icon"
+                            onclick="searchToggle(this, event);"
+                        >
+                            <span></span>
+                        </button>
+                    </div>
+                    <span
+                        class="close"
+                        onclick="searchToggle(this, event);"
+                    ></span>
+                </div>
+                <div id="container-grid" class="grid-container">
+                    <!-- reuiehdkc -->
+                </div>
+            </div>
+            <div class="home-user">User</div>
+            <div class="home-settings">Settings</div>
+        </section>
+    </body>
 </html>

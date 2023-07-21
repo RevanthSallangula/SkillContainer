@@ -47,6 +47,6 @@ btnDashboard.addEventListener("click", function () {
         console.log("Not Logged In");
     } else {
         console.log("Already Logged In");
-        location.href = "/dashboard/dashboard.html";
+        location.href = "/dashboard";
     }
 });
