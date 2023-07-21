@@ -63,7 +63,7 @@ function displayCurrentTab(name) {
 
 //Logs Out to index.html
 function logOut() {
-    location.href = "/index.html";
+    location.href = "/LandingPage/index.html";
 }
 
 //Search Bar
