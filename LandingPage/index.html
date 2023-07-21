@@ -1,154 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Rubik:400,700"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap"
-      rel="stylesheet"
-    />
-    <title>Skill Container</title>
-  </head>
-  <body>
-    <link rel="stylesheet" href="style.css" />
-    <script defer src="script.js"></script>
-    <!-- NAVIGATION BAR -->
-    <header class="header">
-      <nav class="navbar">
-        <a href="#" class="nav-logo">Skill Container</a>
-        <ul class="nav-menu">
-          <li class="nav-item">
-            <button class="dashboard-btn">
-              <a href="#" class="nav-link" onclick="toggleShowLogin()"
-                >Dashboard</a
-              >
-            </button>
-          </li>
-          <li class="nav-item">
-            <button class="pricing-btn">
-              <a href="#" class="nav-link">Pricing</a>
-            </button>
-          </li>
-          <li class="nav-item">
-            <button class="contact-btn">
-              <a href="#" class="nav-link" onclick="toggleShowContact()"
-                >Contact Us</a
-              >
-            </button>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <!-- NAVBAR TR -->
-    <div class="detail-forms">
-      <!-- LOGIN -->
-      <div class="login-form">
-        <form class="login-form-class">
-          <div>
-            <button class="btn-close" onclick="closeAll()">X</button>
-            <h1 style="text-align: center">Login</h1>
-          </div>
-          <div class="content">
-            <div class="input-field">
-              <input type="email" placeholder="Email" autocomplete="nope" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Rubik:400,700"
+        />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap"
+            rel="stylesheet"
+        />
+        <title>Skill Container</title>
+    </head>
+    <body>
+        <link rel="stylesheet" href="style.css" />
+        <script defer src="script.js"></script>
+        <!-- NAVIGATION BAR -->
+        <header class="header">
+            <nav class="navbar">
+                <a href="#" class="nav-logo">Skill Container</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <button class="dashboard-btn">
+                            <a
+                                href="#"
+                                class="nav-link"
+                                onclick="toggleShowLogin()"
+                                >Dashboard</a
+                            >
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="pricing-btn">
+                            <a href="#" class="nav-link">Pricing</a>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="contact-btn">
+                            <a
+                                href="#"
+                                class="nav-link"
+                                onclick="toggleShowContact()"
+                                >Contact Us</a
+                            >
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- NAVBAR TR -->
+        <div class="detail-forms">
+            <!-- LOGIN -->
+            <div class="login-form">
+                <form class="login-form-class">
+                    <div>
+                        <button class="btn-close" onclick="closeAll()">
+                            X
+                        </button>
+                        <h1 style="text-align: center">Login</h1>
+                    </div>
+                    <div class="content">
+                        <div class="input-field">
+                            <input
+                                type="email"
+                                placeholder="Email"
+                                autocomplete="nope"
+                            />
+                        </div>
+                        <div class="input-field">
+                            <input
+                                type="password"
+                                placeholder="Password"
+                                autocomplete="new-password"
+                            />
+                        </div>
+                        <a href="/dashboard/dashboard.html" class="link"
+                            >Skip Login</a
+                        >
+                    </div>
+                    <div class="action">
+                        <button
+                            class="login-registration-btn"
+                            onclick="toggleShowRegistration()"
+                        >
+                            Register
+                        </button>
+                        <button class="login-sign-in-btn">Sign in</button>
+                    </div>
+                </form>
             </div>
-            <div class="input-field">
-              <input
-                type="password"
-                placeholder="Password"
-                autocomplete="new-password"
-              />
-            </div>
-            <a href="/dashboard/dashboard.html" class="link">Skip Login</a>
-          </div>
-          <div class="action">
-            <button
-              class="login-registration-btn"
-              onclick="toggleShowRegistration()"
-            >
-              Register
-            </button>
-            <button class="login-sign-in-btn">Sign in</button>
-          </div>
-        </form>
-      </div>
-      <!-- REGISTRATION -->
-      <div class="registration-form">
-        <form class="login-form-class">
-          <div>
-            <button class="btn-close" onclick="closeAll()">X</button>
-            <h1 style="text-align: center">Registration</h1>
-          </div>
-          <div class="content">
-            <div class="input-field">
-              <input type="text" placeholder="Name" autocomplete="nope" />
-            </div>
-            <!-- FIX THIS !!!! -->
-            <!-- <div>
+            <!-- REGISTRATION -->
+            <div class="registration-form">
+                <form class="login-form-class">
+                    <div>
+                        <button class="btn-close" onclick="closeAll()">
+                            X
+                        </button>
+                        <h1 style="text-align: center">Registration</h1>
+                    </div>
+                    <div class="content">
+                        <div class="input-field">
+                            <input
+                                type="text"
+                                placeholder="Name"
+                                autocomplete="nope"
+                            />
+                        </div>
+                        <!-- FIX THIS !!!! -->
+                        <!-- <div>
               <input
                 type="date"
                 placeholder="Date of Birth"
                 autocomplete="nope"
               />
             </div> -->
-            <div class="input-field">
-              <input type="email" placeholder="Email" autocomplete="nope" />
+                        <div class="input-field">
+                            <input
+                                type="email"
+                                placeholder="Email"
+                                autocomplete="nope"
+                            />
+                        </div>
+                        <div class="input-field">
+                            <input
+                                type="password"
+                                placeholder="Password"
+                                autocomplete="new-password"
+                            />
+                        </div>
+                        <div class="input-field">
+                            <input
+                                type="password"
+                                placeholder="Confirm Password"
+                                autocomplete="new-password"
+                            />
+                        </div>
+                    </div>
+                    <div class="action">
+                        <button class="registration-sign-up-btn">
+                            SIGN UP
+                        </button>
+                    </div>
+                </form>
             </div>
-            <div class="input-field">
-              <input
-                type="password"
-                placeholder="Password"
-                autocomplete="new-password"
-              />
+            <!-- CONTACT -->
+            <div class="contact-form" style="display: none">
+                <div style="font-size: 20px">
+                    <button class="btn-close" onclick="closeAll()">X</button>
+                    <h1 style="text-align: center">Contact Us</h1>
+                </div>
+                <form>
+                    <input
+                        name="name"
+                        type="text"
+                        class="feedback-input"
+                        placeholder="Name"
+                    />
+                    <input
+                        name="email"
+                        type="text"
+                        class="feedback-input"
+                        placeholder="Email"
+                    />
+                    <textarea
+                        name="text"
+                        class="feedback-input"
+                        placeholder="Comment"
+                    ></textarea>
+                    <div class="action">
+                        <button class="contact-submission-btn">SUBMIT</button>
+                    </div>
+                </form>
             </div>
-            <div class="input-field">
-              <input
-                type="password"
-                placeholder="Confirm Password"
-                autocomplete="new-password"
-              />
-            </div>
-          </div>
-          <div class="action">
-            <button class="registration-sign-up-btn">SIGN UP</button>
-          </div>
-        </form>
-      </div>
-      <!-- CONTACT -->
-      <div class="contact-form" style="display: none">
-        <div style="font-size: 20px">
-          <button class="btn-close" onclick="closeAll()">X</button>
-          <h1 style="text-align: center">Contact Us</h1>
         </div>
-        <form>
-          <input
-            name="name"
-            type="text"
-            class="feedback-input"
-            placeholder="Name"
-          />
-          <input
-            name="email"
-            type="text"
-            class="feedback-input"
-            placeholder="Email"
-          />
-          <textarea
-            name="text"
-            class="feedback-input"
-            placeholder="Comment"
-          ></textarea>
-          <div class="action">
-            <button class="contact-submission-btn">SUBMIT</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </body>
+    </body>
 </html>
