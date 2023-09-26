@@ -18,6 +18,7 @@
     <body>
         <link rel="stylesheet" href="style.css" />
         <script defer src="script.js"></script>
+        <script defer src="lpserver.js"></script>
         <!-- NAVIGATION BAR -->
         <header class="header">
             <nav class="navbar">
@@ -55,7 +56,7 @@
         <div class="detail-forms">
             <!-- LOGIN -->
             <div class="login-form">
-                <form class="login-form-class">
+                <form id="login-field" class="login-form-class">
                     <div>
                         <button class="btn-close" onclick="closeAll()">
                             X
@@ -65,6 +66,7 @@
                     <div class="content">
                         <div class="input-field">
                             <input
+                                id="login-email"
                                 type="email"
                                 placeholder="Email"
                                 autocomplete="nope"
@@ -72,6 +74,7 @@
                         </div>
                         <div class="input-field">
                             <input
+                                id="login-password"
                                 type="password"
                                 placeholder="Password"
                                 autocomplete="new-password"
@@ -81,18 +84,21 @@
                     </div>
                     <div class="action">
                         <button
+                            type="button"
                             class="login-registration-btn"
                             onclick="toggleShowRegistration()"
                         >
                             Register
                         </button>
-                        <button class="login-sign-in-btn">Sign in</button>
+                        <button class="login-sign-in-btn" type="submit">
+                            Sign in
+                        </button>
                     </div>
                 </form>
             </div>
             <!-- REGISTRATION -->
             <div class="registration-form">
-                <form class="login-form-class">
+                <form id="registration-field" class="login-form-class">
                     <div>
                         <button class="btn-close" onclick="closeAll()">
                             X
@@ -102,21 +108,15 @@
                     <div class="content">
                         <div class="input-field">
                             <input
+                                id="registration-username"
                                 type="text"
-                                placeholder="Name"
+                                placeholder="Username"
                                 autocomplete="nope"
                             />
                         </div>
-                        <!-- FIX THIS !!!! -->
-                        <!-- <div>
-              <input
-                type="date"
-                placeholder="Date of Birth"
-                autocomplete="nope"
-              />
-            </div> -->
                         <div class="input-field">
                             <input
+                                id="registration-email"
                                 type="email"
                                 placeholder="Email"
                                 autocomplete="nope"
@@ -124,21 +124,23 @@
                         </div>
                         <div class="input-field">
                             <input
+                                id="registration-password"
                                 type="password"
                                 placeholder="Password"
                                 autocomplete="new-password"
                             />
                         </div>
-                        <div class="input-field">
+                        <!-- <div class="input-field">
                             <input
+                                id="registration-confirm-password"
                                 type="password"
                                 placeholder="Confirm Password"
                                 autocomplete="new-password"
                             />
-                        </div>
+                        </div> -->
                     </div>
                     <div class="action">
-                        <button class="registration-sign-up-btn">
+                        <button class="registration-sign-up-btn" type="submit">
                             SIGN UP
                         </button>
                     </div>
