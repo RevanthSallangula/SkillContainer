@@ -14,7 +14,9 @@ app.use(bodyParser.json());
 app.get("/", (req, res) => {
     res.sendFile(__dirname + "/LandingPage/index.html");
 });
-
+app.get("/dashboard", (req, res) => {
+    res.sendFile(__dirname + "/dashboard/dashboard.html");
+});
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
@@ -61,7 +63,7 @@ app.post("/login", (req, res) => {
             res.status(500).json({ error: "Database error" });
         } else {
             if (results.length > 0) {
-                res.json({ message: "Login successful" });
+                res.json({ message: "Login successful", url: "/dashboard" });
             } else {
                 res.json({ message: "Invalid username or password" });
             }
